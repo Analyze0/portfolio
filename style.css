@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Public+Sans&display=swap');
+
+html {
+  -webkit-user-drag: none;
+  user-select: none;
+  cursor: crosshair;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  background: #121212;
+}
+
+a {
+  z-index:100;
+  border-radius: 15px;
+  font-size: 100px;
+  margin: 100px;
+  color: white;
+  position: relative;
+  text-decoration: none;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0) translateY(2px);
+  transition: transform .3s ease-in-out;
+}
+
+a:hover::before {
+  border-radius: 15px;
+  transform-origin: left;
+  transform: scaleX(1) translateY(2px);
+}
+
+.about {
+  color: #9f2dde;
+}
+
+.about {
+  animation: ease-in-out 1s show;
+}
+
+.projects {
+  animation: ease-in-out 1.25s show;
+}
+
+.contact {
+  animation: ease-in-out 1.5s show;
+}
+
+.dark div {
+  color: black !important;
+}
+
+.slides {
+  display: none;
+}
+
+img {
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  top: 50px;
+  right: 50px;
+  position: fixed;
+  margin: auto;
+  animation: ease-in-out 1.5s showTwo;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 500px;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.name{
+  color:white;
+  position:fixed;
+  bottom:0px;
+  right:50px;
+  font-size:70px;
+  animation: showThree 1s ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    filter: blur(1);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes showTwo {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showThree {
+  0% {
+    opacity: 0;
+    filter: blur(1);
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .2;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slideshow-container {
+    display: none;
+  }
+
+  a {
+    font-size: 80px;
+    margin: 25px;
+  }
+}
