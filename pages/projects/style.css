@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&family=Public+Sans&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+html {
+  -webkit-user-drag: none;
+  user-select: none;
+  cursor: crosshair;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
+  height: 300%;
+  width: 100%;
+  background: url(images/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.grain {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  background: url(images/grain.gif);
+  opacity: 20%;
+  z-index: 2;
+}
+
+.desk {
+  position: fixed;
+  top: 230px;
+  width: 60%;
+  left: 20%;
+}
+
+.monitors {
+  position: fixed;
+  top: 170px;
+  width: 20%;
+  left: 40%;
+  z-index: 1;
+  transition:.2s ease-in-out;
+}
+
+.monitors:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 100px 1px #ffffff;
+}
+
+.tv {
+  position: fixed;
+  top: 180px;
+  width: 15%;
+  left: 40.8vw;
+  transition:1s ease-in-out;
+}
+
+.monitors:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 100px 1px #ffffff;
+}
+
+.monitorTwo {
+  transform: perspective(700px) rotateX(-25deg) skewY(-5deg) skewX(5deg);
+  position: fixed;
+  top: 69px;
+  width: 21%;
+  left: 27.8vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.project-title {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  display:none;
+}
+
+.description {
+  border-radius: 20px;
+  text-align:center;
+  width:40%;
+  background:black;
+  color:white;
+  opacity:50%;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  transition:1s ease-in-out;
+}
+
+.description p {
+  width:70%;
+}
+
+.scroll{
+  position:fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1s ease-in-out infinite;
+  top:15px;
+  color:white;
+  font-size: 30px;
+  transition:1s ease-in-out;
+}
+
+#back {
+  cursor:pointer;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom-right-radius: 20px;
+  background: black;
+  color: white;
+  padding: 10px;
+  opacity:50%;
+}
+
+@keyframes scroll {
+  0% {
+    top:15px;
+  }
+  50% {
+    top:30px;
+  }
+  100% {
+    top:15px;
+  }
+}
