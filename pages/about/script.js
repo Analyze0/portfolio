@@ -13,5 +13,5 @@ window.onload = function() {
 };
 
 document.getElementById('back').onmousedown = function(e){
-  window.location.href = "/index.html";
+  window.location.href = "/portfolio/index.html";
 }
