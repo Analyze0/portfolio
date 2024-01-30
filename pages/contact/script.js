@@ -28,5 +28,5 @@ document.addEventListener("mousemove", getMousePosition);
 document.addEventListener("touchmove", getMousePosition);
 
 document.getElementById('back').onmousedown = function(e){
-  window.location.href = "/index.html";
+  window.location.href = "/portfolio/index.html";
 }
