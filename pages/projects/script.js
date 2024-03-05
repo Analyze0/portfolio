@@ -31,7 +31,7 @@ window.onscroll = function(e) {
         <h1>NIT (Nebraskan Institute of Thermometers)</h1>
         <center>
         <p>This is a fun little project that I made with a couple friends where we basically just ripped off the MIT website (no copy and paste) and added some funny skits and stuff to it.</p><br>
-        <a src="https://analyze0.github.io/NIT/">Link</a>
+        <a href="https://analyze0.github.io/NIT/">Link</a>
         </center>
         `;
         document.querySelector('.description').style.top = "5px";
@@ -49,7 +49,7 @@ window.onscroll = function(e) {
         <h1>Worldwide Student</h1>
         <center>
       <p>I've recently started working on this game project. It's going to be really exciting!</p><br>
-      <a src="worldwide-student.vercel.app">Link</a>
+      <a href="worldwide-student.vercel.app">Link</a>
       </center>
         `;
         document.querySelector('.description').style.top = "5px";
